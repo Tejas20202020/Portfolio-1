@@ -4,14 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>TejasPortfolio</title>
 </head>
 <body>
-    <div>
-        HEY
+   <header>
+        <div class="logo">TejasPortfolio</div>
+        <button class="contact-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact</button>
+   </header>
+
+   <main>
+    <div class="title-section">
+        <h1>WEB DEVELOPER</h1>
+        <div class="location">
+            <p>BASED<br>In<br>Mumbai,India</p>
+        </div>
     </div>
-    <div>
-        <button>BTN</button>
+    <div class="bio-section">
+        <p class="bio">
+           <span style="color: rgb(226, 216, 211);"> Front-End Web Developer skilled in HTML, CSS, and JavaScript.</span><span style="color: rgb(176, 196, 179);"> Experienced in building responsive UIs, adding scroll effects, and integrating 3D models. Passionate about clean code and currently learning full-stack development.</span>
+        </p>
     </div>
+    <div class="scroll-down">
+
+    </div>
+
+    <spline-viewer class="Planet-3d" url="https://prod.spline.design/Y8UsjYl5BAljdFMD/scene.splinecode"></spline-viewer>
+   </main>
+   
+   <section class="about-section">
+    <h1 class="about-title">AboutMe</h1>
+    <div class="bento-grid">
+        <div class="card intro">
+            <h2 class="card-title">Hello Folks, I'M TEJAS</h2>
+            <p class="card-text">
+              I'm a passionate front-end developer skilled in HTML, CSS, and JavaScript.
+              I enjoy crafting responsive, interactive web experiences with clean, efficient code.
+              Currently exploring 3D model integration and smooth animations to bring designs to life.   
+            </p>
+            <img src="IMAGES/gradient.png" alt="img-1" class="bg-img">
+
+            <div class="model-box">
+                <spline-viewer class="info-3d" url="https://prod.spline.design/lzvgCJmPu6Ppbji1/scene.splinecode"></spline-viewer> 
+            </div>
+        </div>
+        <div class="card tech">
+            <h2 class="card-title">Tech STACK</h2>
+            <p class="card-text">
+                 I work with core front-end technologies like <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> to build responsive and accessible websites. 
+    I’m learning <strong>React</strong> to create dynamic user interfaces, and experimenting with <strong>Three.js</strong> for 3D model integration.
+    On the backend, I’m exploring <strong>Node.js</strong> and <strong>Express</strong> as I move toward full-stack development.
+            </p>
+
+            <img src="IMAGES/gradient 2.png" alt="img-2" class="bg-img">
+            <img src="IMAGES/skills group.png" alt="" class="skills-group">
+        </div>
+        <div class="card time">
+            <h2 class="card-title">FLEXIBLE WITH TIME ZONE, COMMUNICATION & LOCATION</h2>
+            <p class="card-text">BASED In INDIA, Mumbai and OPEN To Remote Work WorldWide</p>
+
+            <img src="IMAGES/gradient3&4.png" alt="" class="bg-img">
+
+            <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"><i class='bx bxs-send'></i></box-icon>CONTACT ME</button>
+
+            
+        </div>
+
+        <div class="card passion">
+            <h2 class="card-title">PASSION FOR CODING</h2>
+            <p class="card-text">  
+    I'm passionate about learning new technologies and constantly improving my skills to build more engaging and meaningful digital experiences.</p>
+
+    <img src="IMAGES/gradient3&4.png" alt="" class="bg-img">
+        </div>
+    </div>
+
+   </section>
+   
+   <!-- CONTACT SECTION -->
+
+    <section class="contact-section" id="contact" >
+        <div class="section-header">
+                <h3>Get In Touch</h3>
+                <p>Have a project in mind or just want to say hello? Drop me a message</p>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="info-card">
+                <h3>Contact info</h3>
+
+                <div class="contact-item">
+                    <p>Email</p>
+                    <a href="#">tejasshinde.work@gmail.com</a>
+                </div>
+
+                <div class="contact-item">
+                    <p>Phone</p>
+                    <a href="#">+91 7304189579</a>
+                </div>
+
+                <div class="contact-item">
+                    <p>Location</p>
+                    <a href="#">Mumbai-400078 , INDIA</a>
+                </div>
+
+                <div class="social-link">
+                    <p>Contacy with me</p>
+                    <a href="https://github.com/Tejas20202020/Portfolio-1" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/tejas-shinde-571972290/" target="_blank">Linkedin</a>
+                    <a href="https://x.com/tejas_shin12913" target="_blank">Twitter</a>
+                </div>
+
+            </div>
+
+            <div class="info-card">
+                <div class="info-card-content">
+                    <h3>Send Message</h3>
+
+                    <form id="contactForm">
+
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your name" required class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="subject" required class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" id="message" placeholder="Your Message" required class="form-control"></textarea>
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="message-btn">Send Message</button>
+
+                        <div class="success-message" id="successMessage">
+                            Message sent successfully! I'll get back to you soon.
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+     </section>
+
+<!-- FOOTER  -->
+
+      <footer>
+        <h3>©️2025, MADE BY TEJAS SHINDE</h3>
+        <div class="box-icons">
+            <a href="https://github.com/Tejas20202020/Portfolio-1" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/tejas-shinde-571972290/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>            
+        </div>
+     </footer>
+
+
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.16/build/spline-viewer.js"></script>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.16/build/spline-viewer.js"></script>
+
+   <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "9c9UABgvXx_XjFIfd",
+    });
+    })();
+    </script>
+
+    <script src="app.js"></script>
 </body>
 </html>
